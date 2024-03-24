@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.log {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.myinfo {
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.73);
+    z-index:3;
+}
+
+.holi {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.hue {
+    font-weight: bold;
+    animation: hue 5s infinite;
+}
+
+@keyframes hue {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    100% {
+        -webkit-filter: hue-rotate(700deg);
+    }
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item {
+    color: white;
+    margin-left: 20px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.holi {
+    color: transparent;
+    background-clip: border-box;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 20px black;
+}
+
+.video {
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the video covers the entire viewport */
+    z-index: -1; 
+}
